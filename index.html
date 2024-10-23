@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div style="display: flex;justify-content: space-between;">
+            <input id="result" class="inputbox" type="text" placeholder="0">
+            <button onclick="clearscreen()" style="padding: 20PX 40PX;margin-right: 10px; margin-top: 10px;border-radius: 10px;background-color: orange;">AC</button>
+        </div>
+        
+        <div class="switch">
+            <div style="margin: 10px;">
+                <button onclick="displaycontent('7')" style="padding: 20px 40px;background-color: white;border-radius: 5px;">7</button>
+                <button onclick="displaycontent('8')" style="padding: 20px 40px;background-color: white;border-radius: 5px;">8</button>
+                <button onclick="displaycontent('9')" style="padding: 20px 40px;background-color: white;border-radius: 5px;">9</button>
+                <button onclick="displaycontent('%')" style="padding: 20px 40px;background-color: orange;border-radius: 5px;">%</button>
+            </div>
+            <div style="margin: 10px;">
+                <button onclick="displaycontent('4')" style="padding: 20px 40px;background-color: white;border-radius: 5px;">4</button>
+                <button onclick="displaycontent('5')" style="padding: 20px 40px;background-color: white;border-radius: 5px;">5</button>
+                <button onclick="displaycontent('6')" style="padding: 20px 40px;background-color: white;border-radius: 5px;">6</button>
+                <button onclick="displaycontent('*')" style="padding: 20px 40px;background-color: orange;border-radius: 5px;">x</button>
+            </div>
+            <div style="margin: 10px;">
+                <button onclick="displaycontent('1')" style="padding: 20px 40px;background-color: white;border-radius: 5px;">1</button>
+                <button onclick="displaycontent('2')" style="padding: 20px 40px;background-color: white;border-radius: 5px;">2</button>
+                <button onclick="displaycontent('3')" style="padding: 20px 40px;background-color: white;border-radius: 5px;">3</button>
+                <button onclick="displaycontent('-')" style="padding: 20px 40px;background-color: orange;border-radius: 5px;">-</button>
+            </div>
+            <div style="margin: 10px;">
+                <button onclick="displaycontent('0')" style="padding: 20px 40px;background-color: white;border-radius: 5px;">0</button>
+                <button onclick="displaycontent('.')" style="padding: 20px 40px;background-color: white;border-radius: 5px;">.</button>
+                <button onclick="displaycontent('+')" style="padding: 20px 40px;background-color: orange;border-radius: 5px;">+</button>
+                <button onclick="calculate()" style="padding: 20px 40px;background-color: orange;border-radius: 5px;">=</button>
+
+            </div>
+            <div style="align-items: center;justify-content: center;display: flex;">
+                <button onclick="removedigit()" style="width: 80%;margin-right: 50px;height: 10VH;background-color: orange;">DELETE</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="./main.js"></script>
+</html>
